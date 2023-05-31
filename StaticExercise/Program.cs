@@ -7,17 +7,17 @@
             int i = 0;
             while(i < 1)
                     {
-                Console.WriteLine("Is your temp Farenheite (F) or Celcius(C)? ");
+                Console.Write("Is your temp Fahrenheit (F) or Celsius(C)? ");
                 var user = Console.ReadLine();
 
 
                 //if user wants F to C
                 if (user.ToUpper() == "F")
                 {
-                    Console.Write("Enter the Temp in Farenheit to conver into Celcius: ");
+                    Console.Write("Enter the Temp in Fahrenheit to conver into Celsius: ");
                     double Temp = double.Parse(Console.ReadLine());
-                    Console.WriteLine($"your conversion to celcius is {TempConverter.FarenheitToCelsius(Temp)}");
-                    Console.WriteLine(TempConverter.FarenheitToCelsius(Temp));
+                    Console.WriteLine($"your conversion to celsius is {TempConverter.FahrenheitToCelsius(Temp)}");
+                    //Console.WriteLine(TempConverter.FarenheitToCelsius(Temp));
                     //close the while loop
                     i++;
                 }
@@ -27,10 +27,10 @@
 
                 else if (user.ToUpper() == "C")
                 {
-                    Console.Write("Enter the Temp in Celcius to convert into Farenheit: ");
+                    Console.Write("Enter the Temp in Celsius to convert into Fahrenheit: ");
                     double Temp = double.Parse(Console.ReadLine());
-                    Console.WriteLine($"your conversion to Farenheite is {TempConverter.CelsiusToFarenheit(Temp)}");
-                    Console.WriteLine(TempConverter.CelsiusToFarenheit(Temp));
+                    Console.WriteLine($"your conversion to Fahrenheit is {TempConverter.CelsiusToFahrenheit(Temp)}");
+                    //Console.WriteLine(TempConverter.CelsiusToFarenheit(Temp));
                     //Close the while loop 
                     i++;
                 }
@@ -40,9 +40,9 @@
 
                 else
                 {
-                    Console.WriteLine("You did not enter a valid conversion type. ");
+                    Console.WriteLine($"{user} is not a valid conversion type. ");
                 }
-                Console.ReadLine();
+                
             }
             }
     }

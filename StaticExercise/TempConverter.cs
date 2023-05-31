@@ -5,16 +5,16 @@ namespace StaticExercise
     {
         public static double FarenheitToCelsius(double farenheit)
         {
-            var result = (farenheit - 32) / 1.8;
-            return result;
+            return (farenheit - 32) / 1.8;
+          
         }
 
 
 
         public static double CelsiusToFarenheit(double Celcius)
         {
-            var result = (Celcius * 9) / 5 + 32;
-            return result;
+            return (Celcius * 9) / 5 + 32;
+            
         }
     }
 }
